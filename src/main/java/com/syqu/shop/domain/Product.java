@@ -47,6 +47,10 @@ public class Product {
 
         return id == product.getId();
     }
+    
+    public String getImage_url() {
+        return this.imageUrl;
+     }
 
     @Override
     public int hashCode() {
