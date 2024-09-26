@@ -22,13 +22,23 @@ public class ProductCreator {
 
         return testProduct;
     }
+    public static Product createTestProduct(int price){
+        Product testProduct = new Product();
+
+        testProduct.setName(NAME);
+        testProduct.setDescription(DESCRIPTION);
+        testProduct.setPrice(price);
+        testProduct.setImageUrl(IMAGE_URL);
+
+        return testProduct;
+    }
 
     public static Set<Product> createTestProducts(){
         Set<Product> testProducts = new HashSet<>();
 
         testProducts.add(createTestProduct());
         testProducts.add(createTestProduct());
-        testProducts.add(createTestProduct());
+        testProducts.add(createTestProduct(1000));
 
         return testProducts;
     }
