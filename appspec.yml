@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "arn:aws:ecs:ap-northeast-2:637423403127:task-definition/MSA-TASK-94102158:3",
+          "LoadBalancerInfo": {
+            "ContainerName": "sampleapp",
+            "ContainerPort": 8080
+          },
+          "PlatformVersion": "1.4.0"
+        }
+      }
+    }
+  ],
+  "Hooks": []
+}
